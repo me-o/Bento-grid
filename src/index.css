@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	/* DM Sans */
+	@font-face {
+		font-family: 'DM Sans';
+		font-style: normal;
+		font-weight: 400;
+		src: url('./assets/fonts/static/DMSans-Regular.ttf');
+	}
+
+	@font-face {
+		font-family: 'DM Sans';
+		font-style: normal;
+		font-weight: 500;
+		src: url('./assets/fonts/static/DMSans-Medium.ttf');
+	}
+	@font-face {
+		font-family: 'DM Sans';
+		font-style: italic;
+		font-weight: 500;
+		src: url('./assets/fonts/static/DMSans-MediumItalic.ttf');
+	}
+}
