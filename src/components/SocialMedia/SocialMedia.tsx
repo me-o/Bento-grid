@@ -1,10 +1,16 @@
 import { motion } from 'framer-motion';
 import { Star } from 'lucide-react';
-import { ulMotion, liMotion } from './motionConfig';
+import { ulMotion, liMotion, containerMotion } from './motionConfig';
+import { IconYellow } from '../../iconThemeConfig';
 
 const SocialMedia = () => {
 	return (
-		<div className=" py-10 rounded-lg bg-purple-500 text-white text-center relative">
+		<motion.div
+			className=" py-10 rounded-lg bg-purple-500 text-white text-center relative"
+			initial="hidden"
+			whileInView="show"
+			variants={containerMotion}
+		>
 			<div className=" mx-[45px] text-[42px] font-medium">
 				Social Media <span className=" text-yellow-500 ">10x </span>
 				<span className=" italic  relative">Faster</span> with AI
@@ -19,13 +25,13 @@ const SocialMedia = () => {
 			>
 				{[...Array(5).keys()].map(item => (
 					<motion.li key={item} variants={liMotion}>
-						<Star color="hsl(39 100% 71%)" fill="hsl(39 100% 71%)" size={28}></Star>
+						<Star color={IconYellow} fill={IconYellow} size={28}></Star>
 					</motion.li>
 				))}
 			</motion.ul>
 
 			<div className=" text-yellow-100 text-[1.125rem]">Over 4,000 5-star reviews</div>
-		</div>
+		</motion.div>
 	);
 };
 export default SocialMedia;

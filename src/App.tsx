@@ -1,10 +1,12 @@
-import SocialMedia from './components/SocialMedia';
+import ManageMultipleAccounts from './components/ManageMultipleAccounts/ManageMultipleAccounts';
+import SocialMedia from './components/SocialMedia/SocialMedia';
 
 function App() {
 	return (
 		<div className=" px-4 py-8 space-y-8 font-DMSans leading-none">
 			<SocialMedia />
-			<div className="">Manage multiple accounts and platforms.</div>
+			<ManageMultipleAccounts />
+
 			<div className="">Maintain a consistent posting schedule.</div>
 			<div className="">
 				Schedule to social media. Optimize post timings to publish content at the perfect time for your

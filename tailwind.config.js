@@ -12,6 +12,7 @@ export default {
 				'yellow-100': 'hsl(31, 66%, 93%)',
 				'yellow-500': 'hsl(39, 100%, 71%)',
 				black: 'hsl(0, 0%, 7%)',
+				White: 'hsl(0, 0%, 100%)',
 			},
 			screens: {
 				mobile: '375px',
