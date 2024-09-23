@@ -1,4 +1,5 @@
 import GrowFollowers from './components/GrowFollowers/GrowFollowers';
+import Growth from './components/Growth/Growth';
 import MaintainAConsistent from './components/MaintainAConsistent/MaintainAConsistent';
 import ManageMultipleAccounts from './components/ManageMultipleAccounts/ManageMultipleAccounts';
 import ScheduleToSocialMedia from './components/ScheduleToSocialMedia/ScheduleToSocialMedia';
@@ -12,7 +13,7 @@ function App() {
 			<MaintainAConsistent />
 			<ScheduleToSocialMedia />
 			<GrowFollowers />
-			<div className="">&gt;56% faster audience growth</div>
+			<Growth />
 			<div className="">Create and schedule content quicker.</div>
 			<div className="">Write your content using AI.</div>
 		</div>
