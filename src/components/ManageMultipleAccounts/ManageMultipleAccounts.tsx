@@ -51,7 +51,7 @@ const ManageMultipleAccounts = () => {
 			whileInView="show"
 			variants={containerMotion}
 		>
-			<motion.ul className=" grid grid-cols-2 gap-3" initial="hidden" whileInView="show" variants={ulMotion}>
+			<motion.ul className=" grid grid-cols-2 gap-3" variants={ulMotion}>
 				{CARD_DATA.map(item => (
 					<CardItem {...item} key={item.id} />
 				))}
