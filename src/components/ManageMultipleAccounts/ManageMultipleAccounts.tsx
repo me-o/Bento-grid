@@ -46,7 +46,7 @@ const CARD_DATA = [
 const ManageMultipleAccounts = () => {
 	return (
 		<motion.div
-			className=" bg-white drop-shadow-md rounded-lg py-5  px-4 space-y-4"
+			className=" bg-white drop-shadow-lg rounded-lg py-5  px-4 space-y-4"
 			initial="hidden"
 			whileInView="show"
 			variants={containerMotion}
