@@ -1,13 +1,13 @@
+import MaintainAConsistent from './components/MaintainAConsistent/MaintainAConsistent';
 import ManageMultipleAccounts from './components/ManageMultipleAccounts/ManageMultipleAccounts';
 import SocialMedia from './components/SocialMedia/SocialMedia';
 
 function App() {
 	return (
-		<div className=" px-4 py-8 space-y-8 font-DMSans leading-none">
+		<div className=" px-4 py-8 space-y-8 font-DMSans leading-none w-screen overflow-hidden">
 			<SocialMedia />
 			<ManageMultipleAccounts />
-
-			<div className="">Maintain a consistent posting schedule.</div>
+			<MaintainAConsistent />
 			<div className="">
 				Schedule to social media. Optimize post timings to publish content at the perfect time for your
 				audience.

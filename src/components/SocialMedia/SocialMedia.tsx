@@ -17,12 +17,7 @@ const SocialMedia = () => {
 			</div>
 
 			{/* stars */}
-			<motion.ul
-				className=" my-6 mb-2 flex items-center justify-center gap-3"
-				initial="hidden"
-				whileInView="show"
-				variants={ulMotion}
-			>
+			<motion.ul className=" my-6 mb-2 flex items-center justify-center gap-3" variants={ulMotion}>
 				{[...Array(5).keys()].map(item => (
 					<motion.li key={item} variants={liMotion}>
 						<Star color={IconYellow} fill={IconYellow} size={28}></Star>

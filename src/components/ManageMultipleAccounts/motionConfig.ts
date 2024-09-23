@@ -3,10 +3,7 @@ export const containerMotion = {
 	show: {
 		opacity: 1,
 		x: 0,
-		transition: {
-			delayChildren: 1,
-			staggerChildren: 0.3, // 0.3s delay
-		},
+		transition: { when: 'beforeChildren' },
 	},
 };
 
@@ -15,7 +12,6 @@ export const ulMotion = {
 	show: {
 		opacity: 1,
 		transition: {
-			delayChildren: 0.3,
 			staggerChildren: 0.3, // 0.5s delay
 		},
 	},
