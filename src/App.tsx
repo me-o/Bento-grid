@@ -1,3 +1,4 @@
+import GrowFollowers from './components/GrowFollowers/GrowFollowers';
 import MaintainAConsistent from './components/MaintainAConsistent/MaintainAConsistent';
 import ManageMultipleAccounts from './components/ManageMultipleAccounts/ManageMultipleAccounts';
 import ScheduleToSocialMedia from './components/ScheduleToSocialMedia/ScheduleToSocialMedia';
@@ -10,8 +11,7 @@ function App() {
 			<ManageMultipleAccounts />
 			<MaintainAConsistent />
 			<ScheduleToSocialMedia />
-
-			<div className="">Grow followers with non-stop content.</div>
+			<GrowFollowers />
 			<div className="">&gt;56% faster audience growth</div>
 			<div className="">Create and schedule content quicker.</div>
 			<div className="">Write your content using AI.</div>
