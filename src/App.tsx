@@ -1,3 +1,4 @@
+import CreatePost from './components/CreatePost/CreatePost';
 import GrowFollowers from './components/GrowFollowers/GrowFollowers';
 import Growth from './components/Growth/Growth';
 import MaintainAConsistent from './components/MaintainAConsistent/MaintainAConsistent';
@@ -14,7 +15,7 @@ function App() {
 			<ScheduleToSocialMedia />
 			<GrowFollowers />
 			<Growth />
-			<div className="">Create and schedule content quicker.</div>
+			<CreatePost />
 			<div className="">Write your content using AI.</div>
 		</div>
 	);
