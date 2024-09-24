@@ -5,6 +5,7 @@ import MaintainAConsistent from './components/MaintainAConsistent/MaintainAConsi
 import ManageMultipleAccounts from './components/ManageMultipleAccounts/ManageMultipleAccounts';
 import ScheduleToSocialMedia from './components/ScheduleToSocialMedia/ScheduleToSocialMedia';
 import SocialMedia from './components/SocialMedia/SocialMedia';
+import WriteUseAI from './components/WriteUseAI/WriteUseAI';
 
 function App() {
 	return (
@@ -16,7 +17,7 @@ function App() {
 			<GrowFollowers />
 			<Growth />
 			<CreatePost />
-			<div className="">Write your content using AI.</div>
+			<WriteUseAI />
 		</div>
 	);
 }
