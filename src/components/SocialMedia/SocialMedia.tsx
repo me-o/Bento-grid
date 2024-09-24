@@ -2,11 +2,12 @@ import { motion } from 'framer-motion';
 import { Star } from 'lucide-react';
 import { ulMotion, liMotion, containerMotion } from './motionConfig';
 import { IconYellow } from '../../iconThemeConfig';
+import { twMerge } from 'tailwind-merge';
 
-const SocialMedia = () => {
+const SocialMedia = ({ className }: PropsType) => {
 	return (
 		<motion.div
-			className=" py-10 rounded-lg bg-purple-500 text-white text-center relative"
+			className={twMerge(' py-10 rounded-lg bg-purple-500 text-white text-center relative', className)}
 			initial="hidden"
 			whileInView="show"
 			variants={containerMotion}

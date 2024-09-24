@@ -1,11 +1,12 @@
 import { motion } from 'framer-motion';
 import ConsistentSchedule from '../../assets/images/illustration-consistent-schedule.webp';
 import { containerMotion, imageMotion, titleMotion } from './motionConfig';
+import { twMerge } from 'tailwind-merge';
 
-const MaintainAConsistent = () => {
+const MaintainAConsistent = ({ className }: PropsType) => {
 	return (
 		<motion.div
-			className=" bg-yellow-500 rounded-lg px-4 pt-4 max-h-[215px] overflow-hidden"
+			className={twMerge(' bg-yellow-500 rounded-lg px-4 pt-4 h-[215px] overflow-hidden', className)}
 			layout
 			initial="hidden"
 			whileInView="show"

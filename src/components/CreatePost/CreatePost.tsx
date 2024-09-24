@@ -1,11 +1,12 @@
 import createPostImage from '../../assets/images/illustration-create-post.webp';
 import { motion } from 'framer-motion';
 import { containerMotion } from './motionConfig';
+import { twMerge } from 'tailwind-merge';
 
-const CreatePost = () => {
+const CreatePost = ({ className }: PropsType) => {
 	return (
 		<motion.div
-			className=" bg-yellow-100 rounded-lg drop-shadow-md py-8 pl-8 space-y-[18px]"
+			className={twMerge(' bg-yellow-100 rounded-lg drop-shadow-md py-8 pl-8 space-y-[18px]', className)}
 			initial="hidden"
 			whileInView="show"
 			variants={containerMotion}
