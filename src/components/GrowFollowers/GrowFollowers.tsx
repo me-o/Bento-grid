@@ -1,11 +1,15 @@
 import growFollowers from '../../assets/images/illustration-grow-followers.webp';
 import { motion } from 'framer-motion';
 import { containerMotion } from './motionConfig';
+import { twMerge } from 'tailwind-merge';
 
-const GrowFollowers = () => {
+const GrowFollowers = ({ className }: PropsType) => {
 	return (
 		<motion.div
-			className=" drop-shadow-md bg-purple-500 rounded-lg py-6 px-[57px] flex flex-col items-center justify-center gap-[38px]"
+			className={twMerge(
+				' drop-shadow-md bg-purple-500 rounded-lg py-6 px-[57px] flex flex-col items-center justify-center gap-[38px] overflow-hidden',
+				className
+			)}
 			initial="hidden"
 			whileInView="show"
 			variants={containerMotion}

@@ -1,11 +1,15 @@
 import SchedulePosts from '../../assets/images/illustration-schedule-posts.webp';
 import { motion } from 'framer-motion';
 import { containerMotion, imageMotion, titleMotion } from './motionConfig';
+import { twMerge } from 'tailwind-merge';
 
-const ScheduleToSocialMedia = () => {
+const ScheduleToSocialMedia = ({ className }: PropsType) => {
 	return (
 		<motion.div
-			className=" bg-purple-100 px-4 py-7 rounded-lg flex flex-col items-center justify-center gap-5 drop-shadow-sm"
+			className={twMerge(
+				' bg-purple-100 px-4 py-7 rounded-lg flex flex-col items-center justify-center gap-5 drop-shadow-sm',
+				className
+			)}
 			initial="hidden"
 			whileInView="show"
 			variants={containerMotion}

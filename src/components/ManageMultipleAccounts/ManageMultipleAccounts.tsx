@@ -3,6 +3,7 @@ import { Instagram, Twitter } from 'lucide-react';
 import { IconPurple } from '../../iconThemeConfig';
 import { FC } from 'react';
 import { containerMotion, liMotion, ulMotion } from './motionConfig';
+import { twMerge } from 'tailwind-merge';
 
 type CardItemType = {
 	icon?: React.ReactNode;
@@ -43,10 +44,10 @@ const CARD_DATA = [
 	},
 ];
 
-const ManageMultipleAccounts = () => {
+const ManageMultipleAccounts = ({ className }: PropsType) => {
 	return (
 		<motion.div
-			className=" bg-white drop-shadow-lg rounded-lg py-5  px-4 space-y-4"
+			className={twMerge(' bg-white drop-shadow-lg rounded-lg py-5  px-4 space-y-4', className)}
 			initial="hidden"
 			whileInView="show"
 			variants={containerMotion}

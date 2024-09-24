@@ -3,6 +3,12 @@
 @tailwind utilities;
 
 @layer base {
+	#root {
+		min-height: 100svh;
+		display: grid;
+		place-content: center;
+	}
+
 	/* DM Sans */
 	@font-face {
 		font-family: 'DM Sans';
