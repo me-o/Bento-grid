@@ -12,9 +12,9 @@ function App() {
 	return (
 		<div
 			className={twMerge(
-				' px-4 py-8 space-y-8 font-DMSans leading-none w-screen overflow-hidden',
-				' md:grid md:gap-7 md:grid-cols-4 md:grid-rows-[324px_92px_157px_246px]  bg-red-500 md:space-y-0 md:p-0 md:items-start *:md:h-full',
-				'max-w-screen-mobile  md:max-w-[1120px]'
+				' px-4 py-8 space-y-8 font-DMSans leading-none w-screen ',
+				' lg:grid lg:gap-7 lg:grid-cols-4 lg:grid-rows-[324px_92px_157px_246px] lg:space-y-0 lg:p-0 lg:items-start *:lg:h-full',
+				'max-w-screen-mobile  lg:max-w-[1120px]'
 			)}
 		>
 			<SocialMedia className=" col-span-2" />
